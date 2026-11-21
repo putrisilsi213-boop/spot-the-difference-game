@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twin Lanterns — Spot the Difference</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header id="hud">
+    <div class="hud-left">
+      <h1 id="game-title">🏮 Twin Lanterns</h1>
+      <div id="level-name">Level 1 · The Clockmaker's Attic</div>
+    </div>
+    <div class="hud-center">
+      <div id="counter" aria-live="polite">Found <b id="found-count">0</b> / <b id="total-count">7</b> &nbsp;·&nbsp; <span id="remaining">7 remaining</span></div>
+      <div id="timer-wrap"><div id="timer-bar"></div><span id="timer-text">2:00</span></div>
+    </div>
+    <div class="hud-right">
+      <div id="score">Score <b id="score-value">0</b></div>
+      <div id="hearts" title="Mistakes left">❤❤❤</div>
+      <button id="hint-btn" type="button" title="Hint (H) — highlights one difference">💡 Hint <span id="hints-left">3</span></button>
+      <button id="mute-btn" type="button" title="Sound on/off (M)">🔊</button>
+      <button id="menu-btn" type="button" title="Back to menu (Esc)">☰ Menu</button>
+    </div>
+  </header>
+
+  <main id="stage">
+    <section class="panel" id="panel-left">
+      <div class="panel-tag">A · Original</div>
+      <canvas id="canvas-left" width="600" height="440"></canvas>
+      <div class="markers" id="markers-left"></div>
+    </section>
+    <section class="panel" id="panel-right">
+      <div class="panel-tag">B · Twin</div>
+      <canvas id="canvas-right" width="600" height="440"></canvas>
+      <div class="markers" id="markers-right"></div>
+    </section>
+    <div id="crosshair" hidden></div>
+  </main>
+
+  <footer id="helpbar">
+    <span>🖱️ Click a difference on either picture</span>
+    <span>⌨️ Arrow keys move the reticle · <b>Enter</b> / <b>Space</b> mark · <b>H</b> hint · <b>R</b> restart · <b>1–3</b> level · <b>M</b> sound</span>
+    <span id="combo">Combo ×1</span>
+  </footer>
+
+  <!-- Menu overlay -->
+  <div class="overlay" id="menu-overlay">
+    <div class="card">
+      <h2>🏮 Twin Lanterns</h2>
+      <p class="tagline">Spot the Difference — three hand-drawn worlds, twice each, never quite the same.</p>
+      <p class="intro">Two pictures sit side by side. They look identical — they are not.
+      Find every hidden difference before the lantern burns down. A wrong click costs a heart
+      and five seconds. Every picture is drawn fresh in code; no images, no network, nothing to download.</p>
+      <div id="level-cards"></div>
+      <p class="keys">Mouse or keyboard: arrows move the reticle, Enter marks, H asks for a hint.</p>
+      <p class="credit">Original art, sounds and names — drawn in code by the Twin Lanterns workshop.</p>
+    </div>
+  </div>
+
+  <!-- Level complete / failed overlay -->
+  <div class="overlay" id="end-overlay" hidden>
+    <div class="card" id="end-card">
+      <h2 id="end-title">Level Complete!</h2>
+      <div id="end-stars">★★★</div>
+      <p id="end-detail"></p>
+      <div class="btn-row">
+        <button id="replay-btn" type="button">↻ Replay (R)</button>
+        <button id="next-btn" type="button">Next level → (N)</button>
+        <button id="end-menu-btn" type="button">☰ Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" hidden></div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
