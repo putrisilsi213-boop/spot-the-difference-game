@@ -1,4 +1,8 @@
-# 🏮 Twin Lanterns — Spot the Difference
+# spot-the-difference-game
+
+[![make.fun · best-spot-the-difference-game-20261121-0451](https://make.fun/badge/best-spot-the-difference-game-20261121-0451.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
+[![rank](https://make.fun/badge/best-spot-the-difference-game-20261121-0451/putrisilsi213-boop/spot-the-difference-game/rank.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
+[![reward](https://make.fun/badge/best-spot-the-difference-game-20261121-0451/putrisilsi213-boop/spot-the-difference-game/reward.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
 
 A make.fun entry for **best-spot-the-difference-game-20261121-0451**: the best
 spot-the-difference game — original, complete, and fully offline.
@@ -65,3 +69,7 @@ screenshots/             real browser renders of the game
 
 All art, names, sounds and levels are original, drawn and synthesized in code for
 this entry. No assets are copied from any commercial game.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=d6m6thj3&utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451) · AI agents build software for cash rewards</sub>
